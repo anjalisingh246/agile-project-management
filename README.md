@@ -1,153 +1,138 @@
-﻿# 🚀 Agile Project Management Tool
+# 🚀 Agile Project Manager
 
-A full-stack web application designed to manage projects for small teams using an agile workflow. This tool allows users to organize work in a structured hierarchy: **Project → User Story → Task**.
+A simple **Agile Project Management system** built using **Flask (Backend)** and **Vanilla JavaScript (Frontend)**.
+This application allows users to create and manage **Projects, User Stories, and Tasks** following Agile methodology.
 
 ---
 
-## 📌 Project Overview
+## 🌐 Live Demo
 
-This application helps teams (3–10 users) to:
+**Frontend (Netlify):**
+https://famous-truffle-76d2b3.netlify.app
 
-- Create and manage projects
-- Break work into user stories and tasks
-- Track progress with status updates
-- Organize tasks efficiently
+**Backend API (Render):**
+https://agile-project-manager.onrender.com
 
-Built as part of a **Full-Stack Intern Assignment** focusing on real-world application design and development .
+---
+
+## 🧠 Features
+
+* Create new Projects
+* Add User Stories
+* Manage Tasks
+* Agile-style project organization
+* REST API built with Flask
+* Background report generator thread
+* SQLite database integration
+* Fully deployed full-stack application
 
 ---
 
 ## 🏗️ Tech Stack
 
-### 🔹 Frontend
+### Backend
 
-- **HTML**
-- **CSS**
-- JavaScript
+* Python
+* Flask
+* Flask-SQLAlchemy
+* Flask-CORS
+* Gunicorn
 
-### 🔹 Backend
+### Frontend
 
-- Python (Flask)
-- **REST** APIs
+* HTML
+* CSS
+* JavaScript
 
-### 🔹 Database
+### Deployment
 
-- SQLite (lightweight and sufficient for small teams)
-
----
-
-## 📂 Project Structure
-
-``` **KPTI**-**AGILE**-**PROJECT**/ │ ├── backend/ │   ├── app.py │   ├── models.py │   ├── routes.py │   └── requirements.txt │ ├── frontend/ │   ├── index.html │   ├── style.css │   └── app.js │ ├── .gitignore └── **README**.md ```
-
----
-
-## ⚙️ Features
-
-- ✅ Create Projects
-- ✅ Add User Stories inside Projects
-- ✅ Add Tasks inside User Stories
-- ✅ Update status (e.g., Pending, In Progress, Done)
-- ✅ Hierarchical data structure
-- ✅ **REST** **API** integration
-- ✅ Simple and responsive UI
+* **Render** → Backend hosting
+* **Netlify** → Frontend hosting
+* **GitHub** → Source code
 
 ---
 
-## 🔗 API Overview
+## 📁 Project Structure
 
-| Method | Endpoint  | Description      |
-| ------ | --------- | ---------------- |
-| GET    | /projects | Get all projects |
-| POST   | /projects | Create project   |
-| GET    | /stories  | Get user stories |
-| POST   | /stories  | Create story     |
-| GET    | /tasks    | Get tasks        |
-| POST   | /tasks    | Create task      |
-
----
-
-## ▶️ How to Run the Project
-
-### 🔹 1. Clone Repository
-
-```bash git clone [https://github.com/your-username/agile-project-management.git](https://github.com/your-username/agile-project-management.git) cd agile-project-management ```
-
-### 🔹 2. Setup Backend
-
-```bash cd backend pip install -r requirements.txt python app.py ```
-
-### 🔹 3. Run Frontend
-
-- Open `frontend/index.html` in browser
-  **OR**
-- Use Live Server in VS Code
+```
+kpit-agile-project
+│
+├── backend
+│   ├── app.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── requirements.txt
+│
+├── frontend
+│   ├── index.html
+│   ├── style.css
+│   ├── app.js
+│
+└── README.md
+```
 
 ---
 
-## 🔄 Async / Background Workflow
+## ⚙️ Backend Setup (Local)
 
-- Can include features like:
+Clone the repository
 
-    * Notifications
-    * Task reminders
-    * Auto status updates
+```
+git clone https://github.com/Avanish7974/agile-project-manager.git
+cd agile-project-manager/backend
+```
 
-(Current implementation can be extended for async processing.)
+Install dependencies
 
----
+```
+pip install -r requirements.txt
+```
 
-## 🧠 Design Decisions
+Run the server
 
-- Used **Flask** for simplicity and fast development
-- Chose **SQLite** for lightweight storage
-- Separated frontend and backend for scalability
-- **REST** APIs for clean communication
+```
+python app.py
+```
 
----
+Server runs on:
 
-## 🔐 Security Considerations
-
-- Input validation required
-- Avoid **SQL** injection (use **ORM**)
-- **CORS** handling for frontend-backend communication
-- Authentication can be added in future
-
----
-
-## 🤖 AI Usage
-
-AI tools (like ChatGPT) were used for:
-
-- Debugging
-- UI improvements
-- Code structuring
-- Documentation
+```
+http://localhost:5000
+```
 
 ---
 
-## 🚧 Future Improvements
+## 🌐 API Test
 
-- 🔐 User authentication system
-- 📊 Dashboard with analytics
-- 🧲 Drag & drop tasks (Trello style)
-- 🎨 Better UI/UX
-- ☁️ Deployment (**AWS** / Render)
-- 🔔 Real-time notifications
+Open browser:
 
----
+```
+https://agile-project-manager.onrender.com
+```
 
-## 🎥 Optional
+You should see:
 
-- Demo Video: (Add link)
-- Live Demo: (Add link)
+```
+Agile Project Manager Backend Running 🚀
+```
 
 ---
 
-## 👩‍💻 Author
+## 📊 Future Improvements
+
+* User authentication
+* Dashboard analytics
+* Drag-and-drop task boards
+* PostgreSQL database
+* React frontend upgrade
+
+---
+
+## 👨‍💻 Author
 
 **Anjali Singh**
+B.Tech AIML Student
+Data Science & AI Enthusiast
 
----
-
-⭐ If you like this project, give it a star on GitHub!
+GitHub:
+https://github.com/anjalisingh246
